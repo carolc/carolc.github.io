@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 	Carol Chen's Portfolio Website
 	<br>
