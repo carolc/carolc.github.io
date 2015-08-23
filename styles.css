@@ -1,0 +1,71 @@
+
+body{
+	background-color: #eeeeee;
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+	font-size: 12px;
+}
+
+h1{
+	 font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+	 font-weight: 300; 
+	 font-size: 20px;
+}
+
+a{
+	text-decoration:none;
+	color:#FF9966;
+}
+
+a:hover{
+	color:#FF6600;
+}
+
+p{
+	font-size:12px;
+}
+
+.wrapper{
+	width:940px;
+	margin: 0 auto;
+}
+
+.header{
+	text-align:center;
+}
+
+.header_image{
+	height:175px;
+}
+
+.nav_bar{
+	text-align:center;
+	padding: 10px 30px;
+	margin-bottom:10px;
+}
+
+.nav_link{
+	display:inline-block;
+	padding:5px 25px;
+}
+
+.nav_link_current{
+	color:#009999;
+	font-weight:200;
+}
+
+.thumbnails{
+	margin: 0 auto;
+}
+
+.thumbnail{
+	height:100px;
+	width:100px;
+	margin:10px;
+}
+
+.portfolio_content{
+	width:50%;
+	margin: 0 auto;
+	background-color:#ffffff;
+	padding:20px;
+}
