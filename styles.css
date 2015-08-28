@@ -5,7 +5,7 @@ body{
 	font-size: 12px;
 }
 
-h1{
+.my_h1{
 	 font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
 	 font-weight: 300; 
 	 font-size: 20px;
@@ -29,7 +29,7 @@ p{
 	margin: 0 auto;
 }
 
-.header{
+.my_header{
 	text-align:center;
 }
 
