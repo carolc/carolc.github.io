@@ -1,8 +1,9 @@
 <html>
 	Carol Chen's Portfolio Website
 	<br>
-	This is a portfolio website of my web, design, and illustrative works. There are pages for Artwork, Design, and an About page with a contact form.
+	Week 3 Update<br/>
+	Updated layout and entered in 3 portfolio artwork pieces. Hover over saturates thumbnail. Individual portfolio pages include navigation sidebar and large images of artwork.
 	<br>
-	<img src="/images/week2-readme-screenshot1.png">
-	<img src="/images/week2-readme-screenshot2.png">
+	<img src="/images/week3-readme-screenshot1.png">
+	<img src="/images/week3-readme-screenshot2.png">
 </html>

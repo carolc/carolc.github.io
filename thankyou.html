@@ -8,17 +8,14 @@
 	<body>
 		<div class="wrapper">
 			<div class="my_header">
-				<img src="images/tattoo_header.png">
+				<img src="images/antler_left.png" class="header_image"> <img src="images/antler_right.png" class="header_image">
+				<div><h1 class="my_h1"> the art & design of carol chen</h1> </div>
 			</div>
-			<div class="sub_header">
-				<div class="header_name">
-					<img src="images/header_text.png">
-				</div>
-				<div class="nav_bar">
-					<div class="nav_link"><a href="index.html">artwork</a></div>
-					<div class="nav_link"><a href="design.html">design</a></div>
-					<div class="nav_link nav_link_current">about</div>
-				</div>
+			<div class="nav_bar">
+				<div class="nav_link nav"><a href="index.html">Artwork</a></div>
+				<div class="nav_link"><a href="design.html">UI/UX Design</a></div>
+				<div class="nav_link nav_link_current">About</div>
+			</div>
 			</div>
 			<div class="portfolio_content">
 				<div class="about_photo"><img src="images/carolprofile.jpg" height="100px"></div>
@@ -43,7 +40,7 @@
 		      		<p><label> Email:<br/> <input type="email" name="email" /></label></p>
 		      		<input type="hidden" name="_subject" value="New submission!" />
 
-		      		<label> Pick an animal:<br/>
+		      		<label> Favorite Animal:<br/>
 		        		<select name="favorite_animal">
 				          <option value="" disabled>Please Select</option>
 				          <option value="wolf">Wolf</option>
@@ -63,18 +60,12 @@
 		   			</p>
 		   			<input type="text" name="_gotcha" style="display:none" />
 
-		    		<script>
-		    			function showDiv() {
-   							document.getElementById('thanksDiv').style.display = "block";
-							}
-
-					</script>
+		    
 		      		<p>
-		        		<button class="submit_button" type="submit" name="submit" value="Show Div" onclick="showDiv()">Submit</button>
+		        		<button class="submit_button" type="submit" name="submit">Submit</button>
 		        		<button class="reset_button" type="reset" name="reset">Reset</button>
-		        		<div id="thanksDiv"  style="display:none;" class="submit_thankyou" > Thanks! I will be in touch shortly.</div>
 		        	</p>
-
+		        	<input type="hidden" name="_next" value="index.html"/>
 
    				</form>
    				</div>
