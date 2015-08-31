@@ -48,22 +48,23 @@ p{
 
 .header_name{
 	display:inline-block;
+	vertical-align:bottom;
 }
 
 .header_name img{
 	width:260px;
+	margin-bottom:-5px;
 }
 
 .nav_bar{
 	text-align:right;
 	display:inline-block;
-	float:right;
+	width:459px;
 }
 
 .nav_link{
 	display:inline-block;
 	padding:5px 0px 5px 50px;
-	line-height:38px;
 }
 
 .nav_link_current{
