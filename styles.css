@@ -1,5 +1,6 @@
 
 body{
+	background-image:url("images/exclusive_paper.png");
 	background-color: #eeeeee;
 	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
 	font-size: 12px;
@@ -80,7 +81,7 @@ p{
 
 .thumbnail{
 	width:98%;
-	border:solid 1px #f0f0f0;
+	border:solid 1px #edecea;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 }
