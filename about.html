@@ -42,9 +42,9 @@
 				
 				<div class="about_contact_form">
 				<p>Contact me!</p>
-				<form action="http://www.formspree.io/carollyc@gmail.com" method="POST">
+				<form name="myForm" method="POST">
 		      		<p><label> Name:<br/> <input type="text" name="name" /></label></p>
-		      		<p><label> Email:<br/> <input type="email" name="email" /></label></p>
+		      		<p><label> Email:<br/> <input id="email_field" type="text" name="email" /></label></p>
 		      		<input type="hidden" name="_subject" value="New submission!" />
 
 		      		<label> Pick an animal:<br/>
@@ -68,15 +68,29 @@
 		   			<input type="text" name="_gotcha" style="display:none" />
 
 		    		<script>
-		    			function showDiv() {
-   							document.getElementById('thanksDiv').style.display = "block";
-							}
+		    	// 		function showDiv() {
+		    	// 			var myEmail=document.getElementById("email_field");
+		    	// 			if (validateEmail(email_field) == true){
+   				// 			document.getElementById('thanksDiv').style.display = "block";}
+							// }
 						document.getElementById("submit_button").addEventListener("click", function(event){
    								event.preventDefault()});
+						function validateEmail(inputText)  {  
+							var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+							if(inputText.value.match(mailformat))  {  
+								document.myForm.email.focus();  
+								return true;  
+								}  
+							else  {  
+								alert("Please enter a valid email address");  
+								document.myForm.email.focus();  
+								return false;  
+							}  
+						}  
 
 					</script>
 		      		<p>
-		        		<button class="submit_button" id="contact_submit_button" type="submit" name="submit" value="Show Div" onclick="showDiv()">Submit</button>
+		        		<button class="submit_button" id="contact_submit_button" type="submit" name="submit" value="Show Div" onclick="validateEmail(document.myForm.email)">Submit</button>
 		        		<button class="reset_button" type="reset" name="reset">Reset</button>
 		        		<div id="thanksDiv"  style="display:none;" class="submit_thankyou" > Thanks! I will be in touch shortly.</div>
 		        	</p>
