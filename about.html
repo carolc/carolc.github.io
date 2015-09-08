@@ -71,10 +71,12 @@
 		    			function showDiv() {
    							document.getElementById('thanksDiv').style.display = "block";
 							}
+						document.getElementById("submit_button").addEventListener("click", function(event){
+   								event.preventDefault()});
 
 					</script>
 		      		<p>
-		        		<button class="submit_button" type="submit" name="submit" value="Show Div" onclick="showDiv()">Submit</button>
+		        		<button class="submit_button" id="contact_submit_button" type="submit" name="submit" value="Show Div" onclick="showDiv()">Submit</button>
 		        		<button class="reset_button" type="reset" name="reset">Reset</button>
 		        		<div id="thanksDiv"  style="display:none;" class="submit_thankyou" > Thanks! I will be in touch shortly.</div>
 		        	</p>
