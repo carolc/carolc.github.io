@@ -8,6 +8,7 @@
 		<title>the art & design of carol chen</title>
 		<!-- My CSS -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
+
 	</head>
 	<body>
 		<div class="wrapper">
@@ -16,7 +17,7 @@
 			</div>
 			<div class="sub_header">
 				<div class="header_name">
-					<a href="index.html"><img src="images/header_text.png"></a>
+					<a href="index.html"><img src="images/header_text2.png"></a>
 				</div>
 				<div class="nav_bar">
 					<div class="nav_link"><a href="index.html">artwork</a></div>
@@ -42,9 +43,10 @@
 				
 				<div class="about_contact_form">
 				<p>Contact me!</p>
-				<form name="myForm" action="http://formspree.io/carollyc@gmail.com" method="POST" >
+				<form id="myForm" name="myForm" action="http://formspree.io/carollyc@gmail.com" method="POST" >
+				<input type="hidden" name="_next" value="/index.html" />
 		      		<p><label> Name:<br/> <input type="text" name="name" /></label></p>
-		      		<p><label> Email:<br/> <input id="email_field" type="text" name="email" /></label></p>
+		      		<p><label> Email:<br/> <input id="email_field" type="email" name="email" /></label></p>
 		      		<input type="hidden" name="_subject" value="New submission!" />
 
 		      		<label> Pick an animal:<br/>
@@ -65,34 +67,10 @@
 				          <textarea name="introduction"></textarea>
 				        </label>
 		   			</p>
-		   			<input type="text" name="_gotcha" style="display:none" />
-
-		    		<script>
-		    	// 		function showDiv() {
-		    	// 			var myEmail=document.getElementById("email_field");
-		    	// 			if (validateEmail(email_field) == true){
-   				// 			document.getElementById('thanksDiv').style.display = "block";}
-							// }
-						document.getElementById("submit_button").addEventListener("click", function(event){
-   								event.preventDefault()});
-						function validateEmail(inputText)  {  
-							var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
-							if(inputText.value.match(mailformat))  {  
-								document.myForm.email.focus();  
-								return true;  
-								}  
-							else  {  
-								alert("Please enter a valid email address");  
-								document.myForm.email.focus();  
-								return false;  
-							}  
-						}  
-
-					</script>
+		   			<input type="text" name="_gotcha" style="display:none" />		    		
 		      		<p>
-		        		<button class="submit_button" id="contact_submit_button" type="submit" name="submit" value="Show Div" onclick="validateEmail(document.myForm.email)">Submit</button>
+		        		<button class="submit_button" id="contact_submit_button" type="submit" name="submit" value="Show Div">Submit</button>
 		        		<button class="reset_button" type="reset" name="reset">Reset</button>
-		        		<div id="thanksDiv"  style="display:none;" class="submit_thankyou" > Thanks! I will be in touch shortly.</div>
 		        	</p>
 
 
@@ -100,5 +78,6 @@
    				</div>
 			</div>
 		</div>
+	<script src="script.js"></script>
 	</body>
 </HTML>

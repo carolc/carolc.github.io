@@ -2,7 +2,7 @@
 body{
 	background-image:url("images/exclusive_paper.png");
 	background-color: #eeeeee;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+	font-family: 'Adobe Garamond Pro', 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
 	font-size: 12px;
 }
 
@@ -28,7 +28,7 @@ p{
 }
 
 .wrapper{
-	width:940px;
+	max-width:940px;
 	margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@ p{
 }
 
 .my_header img{
-	width:100%;
+	width:90%;
 }
 
 .sub_header{
@@ -54,7 +54,7 @@ p{
 
 .header_name img{
 	width:260px;
-	margin-bottom:-5px;
+	margin-bottom:-15px;
 }
 
 .nav_bar{
@@ -72,6 +72,7 @@ p{
 	color:#9b9b9b;
 	font-weight:200;
 	font-size:14px;
+	font-style:italic;
 }
 
 .thumbnails{
@@ -79,8 +80,13 @@ p{
 	width:100%;
 }
 
+.thumbnail_entry{
+	width:33%;
+	display:inline-block;
+}
+
 .thumbnail{
-	width:98%;
+	width:100%;
 	border:solid 1px #edecea;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
@@ -97,11 +103,10 @@ p{
 	margin: 0 auto;
 	background-color:#ffffff;
 	padding:15px;
-	text-align:center;
 }
 
 .portfolio_content td{
-	padding:7px;
+	/*padding:7px;*/
 
 }
 
@@ -185,4 +190,48 @@ button{
 
 .sidebar_next{
 	float:right;
+}
+
+@media(max-width:954px){
+
+	.sub_header{
+		text-align:center;
+	}
+
+	.nav_bar{
+		text-align:center;
+		display:block;
+		width:100%;
+		margin-top:10px;
+	}
+
+	.nav_link{
+		padding:5px 20px;
+	}
+}
+
+@media(max-width:809px){
+	.thumbnail_entry{
+		width:49%;
+	}
+}
+
+@media(max-width:715px){
+
+	.port_sidebar{
+		max-width:100%;
+		padding:10px;
+		margin-right:0px;
+		margin-bottom:10px;
+	}
+
+	.port_piece{
+		width:100%;
+	}
+
+
+
+
+
+
 }
