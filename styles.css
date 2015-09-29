@@ -232,10 +232,27 @@ button{
 	.port_piece{
 		width:100%;
 	}
+}
 
+.alert{
 
-
-
-
+	font-style:italic;
 
 }
+
+	.alert-loading{
+		color:gold;
+	}
+
+	.alert-success{
+		color:green;
+
+	}
+
+	.alert-error{
+		color:red;
+	}
+
+
+
+
