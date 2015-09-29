@@ -240,16 +240,16 @@ button{
 
 }
 
-	.alert-loading{
+	.alert--loading{
 		color:gold;
 	}
 
-	.alert-success{
+	.alert--success{
 		color:green;
 
 	}
 
-	.alert-error{
+	.alert--error{
 		color:red;
 	}
 
