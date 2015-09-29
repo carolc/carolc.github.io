@@ -64,7 +64,7 @@ p{
 .nav_bar{
 	text-align:right;
 	display:inline-block;
-	width:459px;
+	width:448px;
 }
 
 .nav_link{
@@ -85,8 +85,9 @@ p{
 }
 
 .thumbnail_entry{
-	width:33%;
+	width:32%;
 	display:inline-block;
+	margin: 0 3px;
 }
 
 .thumbnail{
@@ -94,6 +95,7 @@ p{
 	border:solid 1px #edecea;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
+	border-radius:10%;
 }
 
 .thumbnail:hover{
@@ -103,9 +105,9 @@ p{
 }
 
 .portfolio_content{
-	width:75%;
+	width:77%;
 	margin: 0 auto;
-	background-color:#ffffff;
+	/*background-color:#ffffff;*/
 	padding:15px;
 }
 
@@ -159,6 +161,7 @@ button{
 	float:left;
 	padding:15px;
 	margin-right:10px;
+	background-color: #ffffff;
 }
 
 .port_piece{
@@ -216,7 +219,7 @@ button{
 
 @media(max-width:809px){
 	.thumbnail_entry{
-		width:49%;
+		width:47%;
 	}
 }
 
