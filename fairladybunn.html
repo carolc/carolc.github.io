@@ -6,15 +6,19 @@
 		<meta name="description" content="Carol Chen Art & Design Portfolio">
 		<meta name="keywords" content="Carol Chen, Illustration, Art, Artwork, Portfolio Design, UI, UX, Design, Freelance">
 		<meta name="author" content="Carol Chen">
-
 		<title>the art & design of carol chen</title>
 		<!-- My CSS -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-		<script src="script.js"></script>
+		<script src='jquery.zoom.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('.port_piece').zoom({ on:'click' });			 
+			});
+		</script>
 	</head>
 	<body>
-		<div id="wrapper">
+		<div class="wrapper">
 			<div class="my_header">
 				<img src="images/tattoo_header.png">
 			</div>
@@ -23,19 +27,25 @@
 					<a href="index.html"><img src="images/header_text2.png"></a>
 				</div>
 				<div class="nav_bar">
-					<div class="nav_link nav_link_current" >artwork</div>
+					<div class="nav_link"><a href="index.html">artwork</a></div>
 					<div class="nav_link"><a href="design.html">design</a></div>
 					<div class="nav_link"><a href="about.html">about</a></div>
 				</div>
 			</div>
 
 			<div class="portfolio_content">
-				<div class="thumbnails">
-						<div class="thumbnail_entry"><a href="fairladybunn.html"><img src="images/bunnybutt_thumb.jpg" class="thumbnail"></a></div>
-						<div class="thumbnail_entry"><a href="ggbike.html"><img src="images/ggbike_thumb.jpg" class="thumbnail"></a></div>
-						<div class="thumbnail_entry"><a href="mothersday.html"><img src="images/mothersday_thumb.jpg" class="thumbnail"></a></div>
-						<div class="thumbnail_entry"><a href="wolfbite.html"><img src="images/wolfbite_thumb.jpg" class="thumbnail"></a></div>
-						<div class="thumbnail_entry"><a href="birdhead.html"><img src="images/birdhead_thumb.jpg" class="thumbnail"></a></div>					
+				<div class="port_sidebar">
+					<div class="sidebar_nav">
+						<div class="sidebar_back"><a href="">prev</a></div>
+						<div class="sidebar_next"><a href="mothersday.html">next</a></div>
+					</div>
+					<p class="piece_title">Fair Lady Bunny Butt<p>
+					<p class="piece_desc">An original character concept born from a love of bunnies and a fascination with Victorian era dresses. No booty no problem.</p>
+					<p class="piece_media">8 x 11 Gouache painting</p>
+				</div>
+				<div class="port_piece zoom">
+					<img src="images/bunnybutt.jpg">
+					<p>click to activate zoom</p>
 				</div>
 			</div>
 		</div>

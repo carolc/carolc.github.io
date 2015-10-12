@@ -9,6 +9,13 @@
 		<title>the art & design of carol chen</title>
 		<!-- My CSS -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src='jquery.zoom.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('.port_piece').zoom({ on:'click' });			 
+			});
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -36,9 +43,9 @@
 					<p class="piece_desc">A gift done for a certain special San Francisco cyclist. This piece was also done as a tribute to my new home city. This bridge never gets old.</p>
 					<p class="piece_media">Digital painting, Photoshop</p>
 				</div>
-				<div class="port_piece">
-					<img src="images/ggbike1.jpg"><br/>
-					<img src="images/ggbike2.jpg"><br/>
+				<div class="port_piece zoom">
+					<img src="images/ggbike1.jpg">
+					<p>click to activate zoom</p>
 				</div>
 			</div>
 		</div>

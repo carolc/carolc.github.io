@@ -1,5 +1,9 @@
 
 $(document).ready(function(){
+
+	//page load
+	$("#wrapper").fadeIn(1000);
+	//Prevent redirect on Contact Form
 	var $contactForm = $('#myForm');
 	$contactForm.submit(function(e) {
 		e.preventDefault();
@@ -21,4 +25,8 @@ $(document).ready(function(){
 			}
 		});
 	});
+	
+
+
+
 });
