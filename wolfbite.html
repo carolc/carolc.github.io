@@ -9,6 +9,13 @@
 		<title>the art & design of carol chen</title>
 		<!-- My CSS -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src='jquery.zoom.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('.port_piece').zoom({ on:'click' });			 
+			});
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -36,8 +43,9 @@
 					<p class="piece_desc">Sometimes you see yourself in perfect clarity and your reflection bites back ato you. A personal piece experimenting with texture and neutral colors. No animals were harmed in the making of this piece.</p>
 					<p class="piece_media">Digital painting in Photoshop, Pencil sketch</p>
 				</div>
-				<div class="port_piece">
-					<img src="images/wolfbite.jpg"><br/>
+				<div class="port_piece zoom">
+					<img src="images/wolfbite.jpg">
+					<p>click to activate zoom</p>
 				</div>
 			</div>
 		</div>

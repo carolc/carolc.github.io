@@ -9,6 +9,13 @@
 		<title>the art & design of carol chen</title>
 		<!-- My CSS -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src='jquery.zoom.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('.port_piece').zoom({ on:'click' });			 
+			});
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -36,8 +43,9 @@
 					<p class="piece_desc">A personal meditation in luminescent colors and fine feathered friends.</p>
 					<p class="piece_media">Pencil sketch + digital painting, Photoshop</p>
 				</div>
-				<div class="port_piece">
-					<img src="images/birdhead.jpg"><br/>
+				<div class="port_piece zoom">
+					<img src="images/birdhead.jpg">
+					<p>click to activate zoom</p>
 				</div>
 			</div>
 		</div>

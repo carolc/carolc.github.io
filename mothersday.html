@@ -9,6 +9,13 @@
 		<title>the art & design of carol chen</title>
 		<!-- My CSS -->
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src='jquery.zoom.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('.port_piece').zoom({ on:'click' });			 
+			});
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -36,12 +43,9 @@
 					<p class="piece_desc">A Mother's Day gift for the one and only best mama in the world. We all have our unique contribution to this family and when we are together, boom! It's magic.</p>
 					<p class="piece_media">Digital painting, ProCreate, Photoshop</p>
 				</div>
-				<div class="port_piece">
-					<img src="images/mothersday1.jpg"><br/>
-					<img src="images/mothersday2.jpg"><br/>
-					<img src="images/mothersday3.jpg"><br/>
-					<img src="images/mothersday4.jpg"><br/>
-					<img src="images/mothersday5.jpg"><br/>
+				<div class="port_piece zoom">
+					<img src="images/mothersday1.jpg">
+					<p>click to activate zoom</p>
 				</div>
 			</div>
 		</div>
