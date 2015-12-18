@@ -50,7 +50,7 @@ p{
 }
 
 .my_header img{
-	width:50%;
+	width:60%;
 }
 
 .sub_header{
@@ -308,7 +308,7 @@ button{
 	}
 
 	.nav_link{
-		padding: 33px 30px 5px 30px
+		padding: 33px 30px 5px 20px
 	}
 }
 
