@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Carol Chen Art & Design Portfolio">
+		<meta name="keywords" content="Carol Chen, Illustration, Art, Artwork, Portfolio Design, UI, UX, Design, Freelance">
+		<meta name="author" content="Carol Chen">
+		<title>the art & design of carol chen</title>
+		<!-- My CSS -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src='jquery.zoom.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('.port_piece').zoom({ on:'click' });			 
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="my_header">
+				<img src="images/tattoo_header.png">
+			</div>
+			<div class="sub_header">
+				<div class="header_name">
+					<a href="index.html"><img src="images/header_text2.png"></a>
+				</div>
+				<div class="nav_bar">
+					<div class="nav_link"><a href="index.html">artwork</a></div>
+					<div class="nav_link"><a href="design.html">design</a></div>
+					<div class="nav_link"><a href="about.html">about</a></div>
+				</div>
+			</div>
+
+			<div class="portfolio_content">
+				<div class="port_sidebar">
+					<div class="sidebar_nav">
+						<div class="sidebar_back"><a href="quetzal.html">prev</a></div>
+						<div class="sidebar_next"><a href="deity.html">next</a></div>
+					</div>
+					<p class="piece_title">Appaloosas<p>
+					<p class="piece_desc">A traditional piece done during at the peak of my graphite phase which also corresponded with the peak of my horse phase.</p>
+					<p class="piece_media">9x12, Graphite, 2007</p>
+				</div>
+				<div class="port_piece zoom">
+					<img src="images/appaloosas.jpg">
+					<p>click to activate zoom</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</HTML>
