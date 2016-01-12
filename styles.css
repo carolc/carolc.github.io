@@ -128,7 +128,7 @@ p{
 
 .thumbnail_entry_design .text_overlay{
 	background: #ffffff;
-  height: 97%;
+  height: 98%;
   width: 101%;
   opacity: 0;
   top: 0;
@@ -148,8 +148,8 @@ p{
 }
 
 .thumbnail_entry_design:hover .text_overlay{
-	opacity: .9;
-	transition: opacity .5s;
+	opacity: .95;
+	transition: opacity .4s;
 }
 
 .thumbnail{
