@@ -120,6 +120,7 @@ p{
 	display:inline-block;
 	margin: 0 2px;
 	position:relative;
+
 }
 
 .thumbnail_entry_design a{
@@ -136,7 +137,7 @@ p{
   position: absolute;
   padding: 0;
   transition: opacity .5s;
-  cursor:pointer;
+
 }
 
 .thumbnail_entry_design .text_overlay p{
@@ -145,11 +146,14 @@ p{
 	text-align: center;
 	padding:30px 15px;
 	font-size:14px;
+
 }
+
 
 .thumbnail_entry_design:hover .text_overlay{
 	opacity: .95;
 	transition: opacity .4s;
+
 }
 
 .thumbnail{
@@ -262,6 +266,18 @@ button{
 	margin-bottom:15px;
 }
 
+.port_piece_design{
+	width:70%;
+	display:inline-block;
+	position: relative;
+    overflow: hidden;
+}
+
+.port_piece_design img{
+	width:100%;
+	margin-bottom:15px;
+}
+
 .piece_title{
 	font-weight:600;
 }
@@ -350,6 +366,10 @@ button{
 	}
 
 	.port_piece{
+		width:100%;
+	}
+
+	.port_piece_design{
 		width:100%;
 	}
 }

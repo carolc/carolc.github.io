@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Carol Chen Art & Design Portfolio">
+		<meta name="keywords" content="Carol Chen, Illustration, Art, Artwork, Portfolio Design, UI, UX, Design, Freelance">
+		<meta name="author" content="Carol Chen">
+		<title>the art & design of carol chen</title>
+		<!-- My CSS -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script src='jquery.zoom.js'></script>
+		<script>
+			$(document).ready(function(){
+				$('.port_piece').zoom({ on:'click' });			 
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="my_header">
+				<img src="images/tattoo_header.png">
+			</div>
+			<div class="sub_header">
+				<div class="header_name">
+					<a href="index.html"><img src="images/header_text2.png"></a>
+				</div>
+				<div class="nav_bar">
+					<div class="nav_link"><a href="index.html">artwork</a></div>
+					<div class="nav_link"><a href="design.html">design</a></div>
+					<div class="nav_link"><a href="about.html">about</a></div>
+				</div>
+			</div>
+
+			<div class="portfolio_content">
+				<div class="port_sidebar">
+					<div class="sidebar_nav">
+						<div class="sidebar_back"><a href="ggbike.html">prev</a></div>
+						<div class="sidebar_next"><a href="appaloosas.html">next</a></div>
+					</div>
+					<p class="piece_title">Houseplans Web Platform<p>
+					<p class="piece_desc">Overall web design/redesign of architecture e-commerce platform Houseplans.com. This site has existed since 2007 and has been managed by many different parties. Working with existing infrastructure, my main tasks included cleaning up primary landing pages, establishing consistent practices, and improving key user flows such as browse/search and checkout.</p>
+					
+				</div>
+				<div class="port_piece_design">
+					<img src="design_images/hp_home.jpg">
+					<img src="design_images/hp_pdp.jpg">
+				</div>
+			</div>
+		</div>
+	</body>
+</HTML>
